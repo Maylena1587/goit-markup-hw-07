@@ -9,9 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.main-network .network + .network {
-  margin-left: 10px;
+
+  & .network + .network {
+    margin-left: 10px;
+  }
 }
 .network-link {
   display: flex;
@@ -26,11 +27,11 @@
   &:hover {
     background-color: $accentColor;
   }
+  &:hover .icon {
+    fill: $primaryWhiteColor;
+  }
 }
 
-.network-link:hover .icon {
-  fill: $primaryWhiteColor;
-}
 .team-list .title {
   color: $titleTextColor;
   font-weight: 500;

@@ -16,24 +16,27 @@
   text-align: center;
 }
 //* feature */
-.font {
+
+.feature-list .title {
+  display: flex;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-.feature-list .title {
-  @extend %font;
-  display: flex;
+
   color: $titleTextColor;
 }
 .work-list .title {
-  @extend %font;
   margin-top: 0px;
   margin-bottom: 0px;
-
   background: rgba(47, 48, 58, 0.8);
   color: $primaryWhiteColor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .feature-list .text {
@@ -54,7 +57,7 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: $primaryTextColor;
 }
 
 .advantages {
